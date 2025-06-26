@@ -1,0 +1,221 @@
+    :root {
+      --primary: #333;
+      --background: #fff;
+      --accent: #007bff;
+      --light: #f9f9f9;
+    }
+
+    body.dark {
+      --primary: #fff;
+      --background: #121212;
+      --light: #1f1f1f;
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: var(--background);
+      color: var(--primary);
+      scroll-behavior: smooth;
+    }
+
+    .container-1{
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem 0;
+      display: flex;
+      justify-content: space-between;
+      height: 20px;
+       align-items: center;
+    }
+
+    .header {
+      background: var(--light);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav{
+      display: flex;
+      justify-content: space-around;
+    }
+    .nav ul {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: var(--primary);
+    }
+
+    .toggle-theme {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      gap: 10px;
+    }
+
+    .mobile-menu{
+      background: none;
+      display: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+    .home{
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-around;
+    }
+    .container-2{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .myprofile{
+  width: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    display: flex;
+    justify-self: right;
+}
+
+   .about, .skills, .projects, .contact {
+      padding: 4rem 0;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+.container-3{
+  width: 1000px;
+  height: 500px;
+  justify-self:center;
+}
+.p-descrp{
+  border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    height: 300px;
+    justify-content: center;
+}
+.myself{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+    .skill-bar {
+      margin-bottom: 1rem;
+    }
+
+    .bar.css{
+      margin-bottom: 1rem;
+    }
+
+    .bar {
+      height: 10px;
+      background: var(--light);
+      border-radius: 5px;
+      margin-top: 5px;
+      position: relative;
+    }
+
+    .bar.html::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 90%;
+      background: var(--accent);
+      border-radius: 5px;
+    }
+
+    .bar.css::after {
+      width: 85%;
+      background: var(--accent);
+    }
+
+    .bar.js::after {
+      width: 75%;
+      background: var(--accent);
+    }
+
+    .projects .project {
+      margin-bottom: 2rem;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact input, .contact textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--light);
+    }
+
+    @media (max-width: 768px) {
+      .nav ul {
+        display: none;
+        flex-direction: column;
+        background: var(--light);
+        position: absolute;
+        right: 1rem;
+        top: 60px;
+        width: 200px;
+        padding: 1rem;
+      }
+
+      .nav.open ul {
+        display: flex;
+      }
+       .mobile-menu{
+    display: flex;
+  }
+  .home{
+    flex-direction: column;
+    align-items: center;
+  }
+    }
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  
+}
+
+.skills {
+  text-align: left; /* Right-align text */
+  padding-top: 5px; /* Add top padding */
+  padding-bottom: 5px; /* Add bottom padding */
+  
+}
+
+.html {width: 90%; background-color: #04AA6D;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;}
+.java{width: 75%; background-color: #629e1e;}
+.c{width: 55%; background-color: #860f63;}
+
+
